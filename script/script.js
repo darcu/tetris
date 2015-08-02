@@ -746,7 +746,7 @@ var keydown = function(e) {
 
 		setTimeout(function() {
 			if (keyIsDown) {
-                console.log('set moving', keyIsDown, moving);
+				console.log('set moving', keyIsDown, moving);
 				moving = 1;
 			}
 		}, 200);
@@ -758,11 +758,11 @@ var keydown = function(e) {
 	} else if (e.keyCode == 37) { //left
 		keyIsDown = true;
 
-        moveLeft();
+		moveLeft();
 
 		setTimeout(function() {
 			if (keyIsDown) {
-                console.log('set moving', keyIsDown, moving);
+				console.log('set moving', keyIsDown, moving);
 				moving = -1;
 			}
 		}, 200);
@@ -776,7 +776,7 @@ var keydown = function(e) {
 		moveDown();
 		setTimeout(function() {
 			if (keyIsDown) {
-                console.log('set moving', keyIsDown, moving);
+				console.log('set moving', keyIsDown, moving);
 				moving = 2;
 			}
 		}, 200);
@@ -826,7 +826,7 @@ themeButton.addEventListener('click', function() {
 		theme++;
 	else
 		theme = 0;
-	document.getElementById('canvas').style.border = "8px solid " + colors[theme][10];
+	// document.getElementById('canvas').style.border = "8px solid " + colors[theme][10];
 	draw();
 }, false);
 
